@@ -1,0 +1,61 @@
+# =========================================================================
+# Pipeline caches
+# =========================================================================
+# Any MAT file produced while experimenting is ignored by default.
+*.mat
+
+# The four caches of the pipeline are the exception: they are committed, so
+# that the results can be inspected and every figure reproduced without
+# rerunning the calibration or the thirty-year simulation. They are small
+# because each stage saves an explicit list of variables rather than the
+# whole workspace, and they carry no absolute paths.
+#
+#   PreProcessed_Data.mat     ~0.8 MB
+#   Smoothed_Data.mat         ~1.2 MB
+#   Calibration_Results.mat   ~0.1 MB
+#   Long_Simulations.mat      ~0.7 MB   (the ten rescaling factors only)
+#
+# The negations must stay AFTER the *.mat rule above, or they have no
+# effect.
+!PreProcessed_Data.mat
+!Smoothed_Data.mat
+!Calibration_Results.mat
+!Long_Simulations.mat
+
+# =========================================================================
+# MATLAB working files
+# =========================================================================
+*.asv
+*.autosave
+*.m~
+slprj/
+sccprj/
+codegen/
+*.mex*
+*.mlappinstall
+*.mltbx
+
+# =========================================================================
+# Figures exported locally
+# =========================================================================
+# The scripts only display their figures; nothing is written to disk. These
+# rules cover figures a user exports by hand.
+*.png
+*.pdf
+*.eps
+*.fig
+*.svg
+*.tif
+
+# =========================================================================
+# Manuscript drafts (not for public distribution)
+# =========================================================================
+*.docx
+*.doc
+
+# =========================================================================
+# Operating system
+# =========================================================================
+.DS_Store
+Thumbs.db
+desktop.ini

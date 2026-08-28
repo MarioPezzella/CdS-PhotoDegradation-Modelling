@@ -1,0 +1,115 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the associated paper."
+title: "CdS-Degradation-Modelling: data-informed modelling of cadmium sulfide photodegradation in oil paintings"
+abstract: >-
+  MATLAB pipeline for the data-informed calibration and long-term simulation
+  of a non-local integrodifferential model of pigment photooxidation,
+  applied to the conversion of yellow cadmium sulfide into white cadmium
+  sulfate in oil paint. The pipeline preprocesses synchrotron S K-edge
+  micro-XANES imaging data of artificially photoaged paint mock-ups,
+  applies a monotonicity-preserving smoothing procedure, calibrates the
+  three dimensionless model parameters through a hybrid global-local
+  optimization strategy, and integrates the calibrated model up to 30 years
+  to predict the growth of the sulfate alteration layer.
+type: software
+version: "1.0"
+date-released: "2026-08-27"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/MarioPezzella/CdS-Degradation-Modelling"
+keywords:
+  - heritage science
+  - cadmium yellow
+  - pigment degradation
+  - photooxidation
+  - integrodifferential equations
+  - non-standard finite differences
+  - parameter calibration
+  - inverse problems
+  - XANES
+  - MATLAB
+authors:
+  - family-names: Pezzella
+    given-names: Mario
+    affiliation: >-
+      Institute for Applied Mathematics "Mauro Picone" (IAC), National
+      Research Council of Italy, Naples, Italy; and Department of
+      Mathematics and Applications "R. Caccioppoli", University of Naples
+      Federico II, Naples, Italy
+  - family-names: Mattana
+    given-names: Sara
+    affiliation: >-
+      Institute of Chemical Science and Technologies "G. Natta" (SCITEC),
+      National Research Council of Italy, Perugia, Italy
+  - family-names: Rosi
+    given-names: Francesca
+    affiliation: >-
+      Institute of Chemical Science and Technologies "G. Natta" (SCITEC),
+      National Research Council of Italy, Perugia, Italy
+  - family-names: Cotte
+    given-names: Marine
+    affiliation: >-
+      European Synchrotron Radiation Facility, Grenoble, France; and
+      Sorbonne Universite, CNRS, Laboratoire d'archeologie moleculaire et
+      structurale (LAMS), Paris, France
+  - family-names: Romani
+    given-names: Aldo
+    affiliation: >-
+      Department of Chemistry, Biology and Biotechnology, University of
+      Perugia, Perugia, Italy; and SCITEC, National Research Council of
+      Italy, Perugia, Italy
+  - family-names: Miliani
+    given-names: Costanza
+    affiliation: >-
+      Institute of Heritage Science (ISPC), National Research Council of
+      Italy, Naples, Italy
+  - family-names: Natalini
+    given-names: Roberto
+    affiliation: >-
+      Institute for Applied Mathematics "Mauro Picone" (IAC), National
+      Research Council of Italy, Rome, Italy
+  - family-names: Monico
+    given-names: Letizia
+    affiliation: >-
+      Institute of Chemical Science and Technologies "G. Natta" (SCITEC),
+      National Research Council of Italy, Perugia, Italy
+preferred-citation:
+  type: article
+  title: >-
+    Early detection and long-term prediction of pigment degradation in
+    paintings through data-informed mathematical modelling
+  year: 2026
+  status: submitted
+  authors:
+    - family-names: Mattana
+      given-names: Sara
+    - family-names: Pezzella
+      given-names: Mario
+    - family-names: Rosi
+      given-names: Francesca
+    - family-names: Cotte
+      given-names: Marine
+    - family-names: Romani
+      given-names: Aldo
+    - family-names: Miliani
+      given-names: Costanza
+    - family-names: Natalini
+      given-names: Roberto
+    - family-names: Monico
+      given-names: Letizia
+references:
+  - type: article
+    title: "An Integro-Differential Model of Cadmium Yellow Photodegradation"
+    authors:
+      - family-names: Ceseri
+        given-names: Maurizio
+      - family-names: Natalini
+        given-names: Roberto
+      - family-names: Pezzella
+        given-names: Mario
+    journal: "SIAM Journal on Applied Mathematics"
+    volume: 85
+    issue: 6
+    start: 2591
+    end: 2610
+    year: 2025
+    doi: "10.1137/24M1709704"
