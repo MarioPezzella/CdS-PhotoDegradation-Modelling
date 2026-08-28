@@ -26,16 +26,16 @@ formulation, the calibration strategy and the discussion of the results.
 
 ### Authors
 
-* Sara Mattana, Francesca Rosi, Aldo Romani, Letizia Monico<br/>
-  Institute of Chemical Science and Technologies "G. Natta" (SCITEC)<br/>
-  National Research Council, Perugia, Italy<br/>
-  A. Romani is also with the Department of Chemistry, Biology and
-  Biotechnology, University of Perugia, Perugia, Italy
 * Mario Pezzella, Roberto Natalini<br/>
   Institute for Applied Mathematics "Mauro Picone" (IAC)<br/>
   National Research Council, Naples and Rome, Italy<br/>
   M. Pezzella is also with the Department of Mathematics and Applications
   "R. Caccioppoli", University of Naples Federico II, Naples, Italy
+* Sara Mattana, Francesca Rosi, Aldo Romani, Letizia Monico<br/>
+  Institute of Chemical Science and Technologies "G. Natta" (SCITEC)<br/>
+  National Research Council, Perugia, Italy<br/>
+  A. Romani is also with the Department of Chemistry, Biology and
+  Biotechnology, University of Perugia, Perugia, Italy
 * Marine Cotte<br/>
   European Synchrotron Radiation Facility, Grenoble, France<br/>
   and Sorbonne Université, CNRS, LAMS, Paris, France
@@ -43,7 +43,7 @@ formulation, the calibration strategy and the discussion of the results.
   Institute of Heritage Science (ISPC)<br/>
   National Research Council, Naples, Italy
 
-S. Mattana and M. Pezzella contributed equally to this work.
+S. Mattana and M. Pezzella are co-first authors and contributed equally to this work.
 R. Natalini and L. Monico are the corresponding authors.
 
 **Software and code developed by:** Mario Pezzella<br/>
@@ -227,15 +227,10 @@ delete Smoothed_Data.mat Calibration_Results.mat Long_Simulations.mat
 ### A note on `clear`
 
 The pipeline scripts deliberately avoid `clear all`, and you should avoid
-it too while a run is in progress.
-
-Because the stages invoke one another through `run`, they all execute in
-the **same workspace**. A nested script that clears the workspace destroys
-variables its caller still needs, and the resulting failures surface far
-from their cause: in earlier testing this appeared as `fmincon` reporting
-*"Supplied objective function must return a scalar value"* during a
-calibration run that had triggered the smoothing stage — an error with no
-visible connection to the actual problem.
+it too while a run is in progress. Because the stages invoke one another 
+through `run`, they all execute in the **same workspace**. A nested script
+that clears the workspace destroys variables its caller still needs, and 
+the resulting failures surface far from their cause.
 
 ### Samples and notation
 
@@ -340,13 +335,21 @@ the results of [[1](#cds-paper)].
    M. Ceseri, R. Natalini, M. Pezzella<br/>
    SIAM Journal on Applied Mathematics, 2025, 85(6): 2591–2610.<br/>
    [DOI: 10.1137/24M1709704](https://doi.org/10.1137/24M1709704)
+3. <a name="esaim-paper"></a>***High Order Positivity-Preserving Numerical Methods for a Non-Local Photochemical Model***<br/>
+   M. Pezzella<br/>
+   ESAIM: Mathematical Modelling and Numerical Analysis, 2025, 59(3): 1763–1790.<br/>
+   [DOI: 10.1051/m2an/2025041](https://doi.org/10.1051/m2an/2025041)
+
 
 ### Citation
 
-If you use this software, please cite the paper
-[[1](https://github.com/MarioPezzella/CdS-Degradation-Modelling#references)] or,
-better, please check there if a final version has been published. Please
-cite this repository as well; a `CITATION.cff` file is provided, so the
+If you use this software, please cite the papers
+[[1](https://github.com/MarioPezzella/CdS-PhotoDegradation-Modelling#references)] or,
+better, please check there if a final version has been published. Consider to cite 
+also [[2](https://github.com/MarioPezzella/CdS-PhotoDegradation-Modelling#references)] for the 
+integro-differential model and [[3](https://github.com/MarioPezzella/CdS-PhotoDegradation-Modelling#references)]
+for the associated numerical methods.
+Please cite this repository as well; a `CITATION.cff` file is provided, so the
 "Cite this repository" button on the GitHub page produces a ready-made
 entry in BibTeX or APA format.
 
