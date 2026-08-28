@@ -20,9 +20,13 @@ The underlying mathematical model is the one introduced by Ceseri, Natalini
 and Pezzella [[2](#siam-paper)], based on the coupling of Beer–Lambert
 light attenuation with Arrhenius chemical kinetics. The numerical treatment
 uses a second-order predictor–corrector scheme built on Non-Standard Finite
-Differences, which preserves positivity and monotonicity of the solution
-independently of the step size. See [[1](#cds-paper)] for the full
-formulation, the calibration strategy and the discussion of the results.
+Differences [[3](#esaim-paper)], which preserves positivity and monotonicity 
+of the solution independently of the step size. See [[1](#cds-paper)] for the 
+full formulation, the calibration strategy and the discussion of the results.
+
+**Software and code developed by:** Mario Pezzella<br/>
+**Version:** 1.0<br/>
+**Release date:** August 2026
 
 ### Authors
 
@@ -43,12 +47,8 @@ formulation, the calibration strategy and the discussion of the results.
   Institute of Heritage Science (ISPC)<br/>
   National Research Council, Naples, Italy
 
-S. Mattana and M. Pezzella are co-first authors and contributed equally to this work.
+S. Mattana and M. Pezzella contributed equally to this work and are co-first authors.<br/>
 R. Natalini and L. Monico are the corresponding authors.
-
-**Software and code developed by:** Mario Pezzella<br/>
-**Version:** 1.0<br/>
-**Release date:** August 2026
 
 ### Requirements
 
@@ -343,11 +343,11 @@ the results of [[1](#cds-paper)].
 
 ### Citation
 
-If you use this software, please cite the papers
+If you use this software, please cite the paper
 [[1](https://github.com/MarioPezzella/CdS-PhotoDegradation-Modelling#references)] or,
 better, please check there if a final version has been published. Consider to cite 
-also [[2](https://github.com/MarioPezzella/CdS-PhotoDegradation-Modelling#references)] for the 
-integro-differential model and [[3](https://github.com/MarioPezzella/CdS-PhotoDegradation-Modelling#references)]
+also [[2](#siam-paper)] for the 
+integro-differential model and [[3](#esaim-paper)]
 for the associated numerical methods.
 Please cite this repository as well; a `CITATION.cff` file is provided, so the
 "Cite this repository" button on the GitHub page produces a ready-made
