@@ -1,4 +1,4 @@
-# CdS-Degradation-Modelling
+# CdS-PhotoDegradation-Modelling
 
 ## Data-informed modelling of cadmium sulfide photodegradation in oil paintings
 
@@ -355,7 +355,7 @@ entry in BibTeX or APA format.
 
 ### License
 
-CdS-Degradation-Modelling is distributed under the terms of the GNU GPL
+CdS-PhotoDegradation-Modelling is distributed under the terms of the GNU GPL
 v. 3 license (see the attached `LICENSE.md` file).
 
 ### Acknowledgements
